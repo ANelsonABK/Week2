@@ -2,11 +2,7 @@
 
 using namespace std;
 
-//template <typename T>
-//void getUserNum();
-
-//template <typename T>
-int cubeNum(int num);
+float cubeNum(float num);
 
 template <typename T>
 void displayMessage(string message, T num);
@@ -17,24 +13,14 @@ int main()
 	cout << "Please enter a number: ";
 
 	// Cube the number
-	int num;
+	float num;
 	cin >> num;
 
 	// Display to user
 	displayMessage("Number cubed: ", cubeNum(num));
 }
 
-//template <typename T>
-//void getUserNum()
-//{
-//	T num;
-//	cin >> num;
-//
-//	cubeNum(num);
-//}
-
-//template <typename T>
-int cubeNum(int num)
+float cubeNum(float num)
 {
 	return num * num * num;
 }
