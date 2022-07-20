@@ -13,7 +13,7 @@ int main()
 	cout << "Please enter a number: ";
 
 	// Cube the number
-	float num;
+	float num = 0;
 	cin >> num;
 
 	// Display to user

@@ -8,7 +8,7 @@ int main()
 	cout << "Please enter three numbers: " << endl;
 
 	// Get three numbers from user
-	float num1, num2, num3;
+	float num1 = 0, num2 = 0, num3 = 0;
 	cin >> num1 >> num2 >> num3;
 
 	// Add the numbers

@@ -8,8 +8,16 @@ int main()
 {
 	cout << "Please enter a year: ";
 
-	int year;
+	int year = 1582;
 	cin >> year;
+
+	// Check if year is at least 1582 
+	// (when the current leap year rules started)
+	if (year < 1582)
+	{
+		cout << "Please enter a year between 1582 and 2022: " << endl;
+		cin >> year;
+	}
 
 	bool isLeapYear = checkLeapYear(year);
 
