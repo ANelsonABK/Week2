@@ -7,22 +7,25 @@ int findMaxElement(int arr[], int size);
 
 int main()
 {
-	constexpr int size = 5;
+	int size;
 
-	int arr[size];
+	cout << "Welcome! Please enter a size for the array: ";
+	cin >> size;
 
-	populateArray(arr, size);
-	int maxNum = findMaxElement(arr, size);
+	int* arrayPtr = new int[size];
+	populateArray(arrayPtr, size);
 
+	int maxNum = findMaxElement(arrayPtr, size);
 	cout << "The largest number is " << maxNum << "!" << endl;
 }
 
 void populateArray(int arr[], int size)
 {
-	cout << "Welcome! Please enter " << size << " numbers to populate the array with: ";
+	cout << "Please enter " << size << " numbers to populate the array with: ";
 
 	for (int i = 0; i < size; i++)
 	{
+		// TODO: check for input validation
 		cin >> arr[i];
 	}
 }
